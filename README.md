@@ -17,7 +17,7 @@ https://user-images.githubusercontent.com/jamalihassan0307/Flutter-passkeys-auth
 <details>
   <summary>View Full Demo Video</summary>
   
-  https://github.com/jamalihassan0307/Flutter-passkeys-authentication/assets/video.mp4
+  https://github.com/jamalihassan0307/Flutter-passkeys-authentication/blob/main/assets/video.mp4
 </details>
 
 ## 🛠️ Technologies Used
