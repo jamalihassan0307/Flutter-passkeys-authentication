@@ -12,12 +12,12 @@ A modern authentication solution using passkeys and biometrics in Flutter. This 
 
 ## 📱 Demo
 
-https://user-images.githubusercontent.com/YOUR_USER_ID/flutter_application_1/assets/demo.gif
+https://user-images.githubusercontent.com/YOUR_USER_ID/Flutter-passkeys-authentication/assets/demo.gif
 
 <details>
   <summary>View Full Demo Video</summary>
   
-  https://github.com/yourusername/flutter_application_1/assets/video.mp4
+  https://github.com/yourusername/Flutter-passkeys-authentication/assets/video.mp4
 </details>
 
 ## 🛠️ Technologies Used
@@ -41,8 +41,8 @@ https://user-images.githubusercontent.com/YOUR_USER_ID/flutter_application_1/ass
 2. **Installation**
 
    ```bash
-   git clone https://github.com/yourusername/flutter_application_1.git
-   cd flutter_application_1
+   git clone https://github.com/yourusername/Flutter-passkeys-authentication.git
+   cd Flutter-passkeys-authentication
    flutter pub get
    ```
 
@@ -89,4 +89,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
 
-Project Link: [https://github.com/yourusername/flutter_application_1](https://github.com/yourusername/flutter_application_1)
+Project Link: [https://github.com/yourusername/Flutter-passkeys-authentication](https://github.com/yourusername/Flutter-passkeys-authentication)
