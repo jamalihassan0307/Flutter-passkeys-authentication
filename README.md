@@ -17,7 +17,7 @@ https://user-images.githubusercontent.com/jamalihassan0307/Flutter-passkeys-auth
 <details>
   <summary>View Full Demo Video</summary>
   
-  https://github.com/yourusername/Flutter-passkeys-authentication/assets/video.mp4
+  https://github.com/jamalihassan0307/Flutter-passkeys-authentication/assets/video.mp4
 </details>
 
 ## 🛠️ Technologies Used
@@ -41,7 +41,7 @@ https://user-images.githubusercontent.com/jamalihassan0307/Flutter-passkeys-auth
 2. **Installation**
 
    ```bash
-   git clone https://github.com/yourusername/Flutter-passkeys-authentication.git
+   git clone https://github.com/jamalihassan0307/Flutter-passkeys-authentication.git
    cd Flutter-passkeys-authentication
    flutter pub get
    ```
@@ -89,4 +89,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
 
-Project Link: [https://github.com/yourusername/Flutter-passkeys-authentication](https://github.com/yourusername/Flutter-passkeys-authentication)
+Project Link: [https://github.com/jamalihassan0307/Flutter-passkeys-authentication](https://github.com/jamalihassan0307/Flutter-passkeys-authentication)
