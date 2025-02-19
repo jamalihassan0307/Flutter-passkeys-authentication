@@ -36,6 +36,9 @@ dependencies:
   passkeys_platform_interface: ^2.3.0
   local_auth: ^2.2.0
   flutter_secure_storage: ^9.0.0
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.10
+  lottie: ^3.1.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -44,6 +47,12 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.14.3"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  image_path: "assets/logo.jpeg"
+  min_sdk_android: 21
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -92,3 +101,6 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+  assets:
+    - assets/

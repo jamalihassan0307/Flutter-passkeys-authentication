@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../services/auth_service.dart';
 import '../pages/home_page.dart';
+import 'package:lottie/lottie.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -83,7 +84,7 @@ class _LoginPageState extends State<LoginPage> {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => HomePage(email: _emailController.text),
+            builder: (context) => const HomePage(),
           ),
         );
       }
@@ -97,11 +98,10 @@ class _LoginPageState extends State<LoginPage> {
     try {
       final result = await _authService.authenticate(context);
       if (result && mounted) {
-        final email = await _authService.getStoredUsername();
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => HomePage(email: email ?? ''),
+            builder: (context) => const HomePage(),
           ),
         );
       }
@@ -137,69 +137,43 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(24.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Icon(
-                Icons.lock_outline,
-                size: 100,
-                color: Colors.deepPurple,
+              Image.asset(
+                'assets/passkey.jpeg',
+                height: 120,
               ),
-              const SizedBox(height: 32),
-              TextField(
-                controller: _emailController,
-                decoration: const InputDecoration(
-                  labelText: 'Email',
-                  prefixIcon: Icon(Icons.email),
-                  border: OutlineInputBorder(),
-                ),
-                keyboardType: TextInputType.emailAddress,
+              const SizedBox(height: 40),
+              Text(
+                'Secure Authentication',
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
               ),
               const SizedBox(height: 16),
-              TextField(
-                controller: _passwordController,
-                decoration: const InputDecoration(
-                  labelText: 'Password',
-                  prefixIcon: Icon(Icons.lock),
-                  border: OutlineInputBorder(),
-                ),
-                obscureText: true,
-              ),
-              const SizedBox(height: 24),
-              if (_isLoading)
-                const CircularProgressIndicator()
-              else
-                Column(
-                  children: [
-                    SizedBox(
-                      width: double.infinity,
-                      child: ElevatedButton(
-                        onPressed: _loginWithCredentials,
-                        style: ElevatedButton.styleFrom(
-                          padding: const EdgeInsets.all(16),
-                        ),
-                        child: const Text('Login'),
-                      ),
+              Text(
+                'Use your biometric or security key to sign in securely',
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                      color: Colors.grey[600],
                     ),
-                    if (_isPasskeyAvailable) ...[
-                      const SizedBox(height: 16),
-                      const Text('or'),
-                      const SizedBox(height: 16),
-                      SizedBox(
-                        width: double.infinity,
-                        child: OutlinedButton.icon(
-                          onPressed: _loginWithPasskey,
-                          icon: const Icon(Icons.fingerprint),
-                          label: const Text('Sign in with Passkey'),
-                          style: OutlinedButton.styleFrom(
-                            padding: const EdgeInsets.all(16),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ],
+              ),
+              const SizedBox(height: 48),
+              ElevatedButton.icon(
+                onPressed: _loginWithPasskey,
+                icon: const Icon(Icons.fingerprint),
+                label: const Text('Sign in with PassKey'),
+                style: ElevatedButton.styleFrom(
+                  minimumSize: const Size(double.infinity, 56),
                 ),
+              ),
+              const SizedBox(height: 16),
+              TextButton(
+                onPressed: _loginWithCredentials,
+                child: const Text('Use alternative sign-in method'),
+              ),
             ],
           ),
         ),
