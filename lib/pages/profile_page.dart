@@ -10,12 +10,12 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Profile',
-            style: TextStyle(fontWeight: FontWeight.bold)),
+            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
         centerTitle: true,
         backgroundColor: Colors.deepPurple,
         actions: [
           IconButton(
-            icon: const Icon(Icons.logout),
+            icon: const Icon(Icons.logout, color: Colors.white),
             onPressed: () =>
                 Navigator.of(context).pushReplacementNamed('/login'),
           ),

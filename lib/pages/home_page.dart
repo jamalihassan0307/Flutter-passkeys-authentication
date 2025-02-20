@@ -5,9 +5,12 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: SideMenu(),
       appBar: AppBar(
-        title: Text('Home Page'),
+        centerTitle: true,
+        title: Text(
+          'Home Page',
+          style: TextStyle(color: Colors.white),
+        ),
         backgroundColor: Colors.deepPurple,
       ),
       body: SingleChildScrollView(
