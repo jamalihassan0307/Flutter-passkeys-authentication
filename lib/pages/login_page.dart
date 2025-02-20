@@ -136,7 +136,7 @@ class _LoginPageState extends State<LoginPage> {
           ),
         );
       }
-    } catch (e, stackTrace) {
+    } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Error authenticating: $e')),
       );
