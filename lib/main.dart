@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_application_1/pages/main-page.dart';
 import 'pages/login_page.dart';
-import 'pages/home_page.dart';
 
 Future<void> main() async {
   try {
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/login',
       routes: {
         '/login': (context) => const LoginPage(),
-        '/home': (context) => const HomePage(email: ''),
+        '/home': (context) => const MainScreen(email: ''),
       },
     );
   }
