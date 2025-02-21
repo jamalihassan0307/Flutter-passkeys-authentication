@@ -26,7 +26,8 @@ A modern authentication solution using passkeys and biometrics in Flutter. This 
     <img src="assets/3_page_max.png" width="800" alt="Web Interface"/>
     <img src="assets/3_page_max1.png" width="800" alt="Web Dashboard"/>
 </div>
-### Mobile Views
+
+### 📱 Mobile View App
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
     <img src="assets/login_page.jpg" width="200" alt="Login Page"/>
@@ -92,29 +93,6 @@ A modern authentication solution using passkeys and biometrics in Flutter. This 
 - Transaction monitoring
 - User statistics tracking
 
-## 🚀 Getting Started
-
-1. **Prerequisites**
-
-   - Flutter SDK
-   - Android Studio / VS Code
-   - Physical device with:
-     - Android 9.0+
-     - Biometric hardware
-     - Screen lock enabled
-
-2. **Installation**
-
-   ```bash
-   git clone https://github.com/jamalihassan0307/Flutter-passkeys-authentication.git
-   cd Flutter-passkeys-authentication
-   flutter pub get
-   ```
-
-3. **Run the app**
-   ```bash
-   flutter run
-   ```
 
 ## 🔒 Security Features
 
@@ -124,13 +102,6 @@ A modern authentication solution using passkeys and biometrics in Flutter. This 
 - Session management
 - Privacy-focused design
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📞 Contact
 
