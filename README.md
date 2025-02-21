@@ -12,13 +12,7 @@ A modern authentication solution using passkeys and biometrics in Flutter. This 
 
 ## 📱 Demo
 
-https://user-images.githubusercontent.com/jamalihassan0307/Flutter-passkeys-authentication/assets/demo.gif
-
-<details>
-  <summary>View Full Demo Video</summary>
-  
-  https://github.com/jamalihassan0307/Flutter-passkeys-authentication/blob/main/assets/video.mp4
-</details>
+![Demo GIF](assets/gif.gif)
 
 ## 🛠️ Technologies Used
 
