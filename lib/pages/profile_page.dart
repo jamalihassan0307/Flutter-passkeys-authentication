@@ -39,8 +39,7 @@ class ProfilePage extends StatelessWidget {
               ),
               child: const CircleAvatar(
                 radius: 60,
-                backgroundImage: NetworkImage(
-                    'https://source.unsplash.com/160x160/?portrait'),
+                backgroundImage: AssetImage("assets/profile.jpg"),
               ),
             ),
             const SizedBox(height: 16),
@@ -63,7 +62,7 @@ class ProfilePage extends StatelessWidget {
                     title: const Text('Full Name',
                         style: TextStyle(fontWeight: FontWeight.bold)),
                     subtitle:
-                        const Text('John Doe'), // Replace with actual name
+                        const Text('ALi Hassan'), // Replace with actual name
                   ),
                   Divider(),
                   ListTile(
@@ -78,7 +77,7 @@ class ProfilePage extends StatelessWidget {
                     title: const Text('Phone',
                         style: TextStyle(fontWeight: FontWeight.bold)),
                     subtitle: const Text(
-                        '+1234567890'), // Replace with actual phone number
+                        '+923073921189'), // Replace with actual phone number
                   ),
                 ],
               ),
