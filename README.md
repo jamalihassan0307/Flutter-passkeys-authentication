@@ -26,7 +26,7 @@ A modern authentication solution using passkeys and biometrics in Flutter. This 
     <img src="assets/3_page_max.png" width="800" alt="Web Interface"/>
     <img src="assets/3_page_max1.png" width="800" alt="Web Dashboard"/>
 </div>
-### Mobile Views
+### 📱 Mobile View App
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
     <img src="assets/login_page.jpg" width="200" alt="Login Page"/>
